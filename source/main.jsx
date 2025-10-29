@@ -51,10 +51,10 @@ function App() {
         backgroundColor: color,
       }}
     >
-      {/* Left side menu */}
+      {/* left side menu */}
       <div
         style={{
-          width: "25%",
+          width: "20%",
           padding: "2rem",
           background: "#fff",
           color: "#000",
@@ -96,7 +96,7 @@ function App() {
         </div>
       </div>
 
-      {/* Right display area */}
+      {/* right display area */}
       <div
         style={{
           flexGrow: 1,
@@ -120,7 +120,7 @@ function App() {
           {ascii}
         </pre>
 
-        {/* Cloud images overlay */}
+        {/* cloud images overlay */}
         {photos.map((src, i) => (
           <img
             key={i}
