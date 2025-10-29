@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
 
-// Define time slots, background colors, and ASCII art
+// defines time slots + background colors + ASCII art
 const TIME_OPTIONS = {
   morning: {
     label: "2:22 – 2:51 PM",
@@ -13,7 +13,7 @@ const TIME_OPTIONS = {
         ...............
        (______________)
     `,
-    photos: ["photos/morning/cloud1.jpg", "photos/morning/cloud2.jpg"],
+    photos: ["photos/morning/IMG_4756.jpg", "photos/morning/IMG_4757.jpg"],
   },
   afternoon: {
     label: "2:54 – 3:48 PM",
@@ -68,7 +68,7 @@ function App() {
             overcast.exe
           </h2>
 
-          <p style={{ marginTop: "2rem" }}>pick a time slot</p>
+          <p style={{ marginTop: "2rem" }}>pick a time interval</p>
           <ul style={{ listStyle: "none", padding: 0 }}>
             {Object.entries(TIME_OPTIONS).map(([key, option]) => (
               <li
