@@ -13,7 +13,7 @@ const TIME_OPTIONS = {
         ...............
        (______________)
     `,
-    photos: ["./source/photos/morning/IMG_4756.jpg", "./source/photos/morning/IMG_4757.jpg"],
+    photos: ["/source/photos/morning/IMG_4756.jpg", "/source/photos/morning/IMG_4757.jpg"],
   },
   afternoon: {
     label: "2:54 – 3:48 PM",
