@@ -7,23 +7,35 @@ const TIME_OPTIONS = {
     label: "2:22 – 2:51 PM",
     color: "#b8d8ff",
     ascii: `
-       (  )   (   )  )
-        ) (   )  (  (
-        ( )  (    ) )
-        ...............
-       (______________)
+       (  )   (   )  ) (  )   (   )  ) (  )   (   )  ) (  )   (   )  )
+        ) (   )  (  (  ) (   )  (  (  ) (   )  (  (  ) (   )  (  (
+        ( )  (    ) )( )  (    ) )( )  (    ) )
+        ............... ............... ............... ...............
+       (______________)(______________)(______________)
     `,
-    photos: ["/source/photos/morning/IMG_4756.jpg", "/source/photos/morning/IMG_4757.jpg"],
+    photos: ["source/photos/morning/IMG_4756.jpg", "source/photos/morning/IMG_4757.jpg", "source/photos/morning/IMG_4758.jpg",
+    "source/photos/morning/IMG_4759.jpg", "source/photos/morning/IMG_4760.jpg", "source/photos/morning/IMG_4796.jpg", 
+    "source/photos/morning/IMG_4799.jpg", "source/photos/morning/IMG_4800.jpg", "source/photos/morning/IMG_4801.jpg", 
+    "source/photos/morning/IMG_4859.jpg", "source/photos/morning/IMG_4860.jpg"
+    ],
   },
   afternoon: {
     label: "2:54 – 3:48 PM",
     color: "#89c2ff",
     ascii: `
-        ~~~~~~~~ ~~~
-       (    ~~~     )
-        ~~~~~~~~~~~~
+        ~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~
+       (    ~~~     )(    ~~~     )(    ~~~     )
+        ~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~
+      (    ~~~     )(    ~~~     )(    ~~~     )
+         ~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~
     `,
-    photos: ["photos/afternoon/cloud1.jpg", "photos/afternoon/cloud2.jpg"],
+    photos: ["source/photos/afternoon/IMG_4716.jpg", "source/photos/afternoon/IMG_4717.jpg", 
+    "source/photos/afternoon/IMG_4718.jpg", "source/photos/afternoon/IMG_4720.jpg", 
+    "source/photos/afternoon/IMG_4721.jpg", "source/photos/afternoon/IMG_4722.jpg", 
+    "source/photos/afternoon/IMG_4723.jpg", "source/photos/afternoon/IMG_4724.jpg", 
+    "source/photos/afternoon/IMG_4725.jpg", "source/photos/afternoon/IMG_4726.jpg", 
+    "source/photos/afternoon/IMG_4761.jpg", "source/photos/afternoon/IMG_4802.jpg", 
+    "source/photos/afternoon/IMG_4803.jpg", "source/photos/afternoon/IMG_4804.jpg"],
   },
   evening: {
     label: "4:00 – 5:53 PM",
