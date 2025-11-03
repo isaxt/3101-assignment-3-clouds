@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
 
+const afternoonPhotos = import.meta.glob('./photos/afternoon/*.jpg', { eager: true, as: 'url' });
+
+
+console.log(afternoonPhotos);
 // defines time slots + background colors + ASCII art
 const TIME_OPTIONS = {
   morning: {
@@ -29,13 +33,7 @@ const TIME_OPTIONS = {
       (    ~~~     )(    ~~~     )(    ~~~     )
          ~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~
     `,
-    photos: ["source/photos/afternoon/IMG_4716.jpg", "source/photos/afternoon/IMG_4717.jpg", 
-    "source/photos/afternoon/IMG_4718.jpg", "source/photos/afternoon/IMG_4720.jpg", 
-    "source/photos/afternoon/IMG_4721.jpg", "source/photos/afternoon/IMG_4722.jpg", 
-    "source/photos/afternoon/IMG_4723.jpg", "source/photos/afternoon/IMG_4724.jpg", 
-    "source/photos/afternoon/IMG_4725.jpg", "source/photos/afternoon/IMG_4726.jpg", 
-    "source/photos/afternoon/IMG_4761.jpg", "source/photos/afternoon/IMG_4802.jpg", 
-    "source/photos/afternoon/IMG_4803.jpg", "source/photos/afternoon/IMG_4804.jpg"],
+    photos: Object.values(afternoonPhotos),
   },
   evening: {
     label: "4:00 – 5:53 PM",
