@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
 
-const afternoonPhotos = import.meta.glob('./photos/afternoon/*.jpg', { eager: true, as: 'url' });
 
+// glob-- general import all photos from each time slot in the folder
+const morningPhotos = import.meta.glob('./photos/morning/*.jpg', { eager: true, as: 'url' });
+const afternoonPhotos = import.meta.glob('./photos/afternoon/*.jpg', { eager: true, as: 'url' });
+const eveningPhotos = import.meta.glob('./photos/evening/*.jpg', { eager: true, as: 'url' });
 
 console.log(afternoonPhotos);
 // defines time slots + background colors + ASCII art
@@ -17,11 +20,7 @@ const TIME_OPTIONS = {
         ............... ............... ............... ...............
        (______________)(______________)(______________)
     `,
-    photos: ["source/photos/morning/IMG_4756.jpg", "source/photos/morning/IMG_4757.jpg", "source/photos/morning/IMG_4758.jpg",
-    "source/photos/morning/IMG_4759.jpg", "source/photos/morning/IMG_4760.jpg", "source/photos/morning/IMG_4796.jpg", 
-    "source/photos/morning/IMG_4799.jpg", "source/photos/morning/IMG_4800.jpg", "source/photos/morning/IMG_4801.jpg", 
-    "source/photos/morning/IMG_4859.jpg", "source/photos/morning/IMG_4860.jpg"
-    ],
+    photos: Object.values(morningPhotos),
   },
   afternoon: {
     label: "2:54 – 3:48 PM",
@@ -44,7 +43,7 @@ const TIME_OPTIONS = {
          .*|     |
            '--.o.'
     `,
-    photos: ["photos/evening/cloud1.jpg", "photos/evening/cloud2.jpg"],
+    photos: Object.values(eveningPhotos),
   },
 };
 
