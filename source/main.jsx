@@ -294,6 +294,8 @@ function App() {
   src={src}
   alt="cloud"
   style={{
+    transform: "rotate(90deg)",
+    transformOrigin: "center center",
     position: "absolute",
     top: `${pos.top}px`,
     left: `${pos.left}px`,
