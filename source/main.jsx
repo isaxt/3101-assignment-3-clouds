@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { createRoot } from "react-dom/client";
+import { useState, useEffect } from "react"; // manages curent time interval + updates when time interval changes
+import { createRoot } from "react-dom/client"; 
 
 
 // glob-- general import all photos from each time slot in the folder
